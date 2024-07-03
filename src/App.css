@@ -1,0 +1,557 @@
+/* body style starts here */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(242, 242, 98, 0.2);
+  color: #2A1A5E;
+  font-family: math;
+}
+
+/* body style ends here */
+
+/********************************** Universal classes starts here********************************* */
+.shahi-button {
+  background-color: blue;
+  color: white;
+  font-size: 16px;
+  border: 2px solid blue;
+}
+
+.shahi-button:hover {
+  background-color: rgba(97, 84, 12, 0.2);
+  color: white;
+  border: 2px solid blue;
+  transition: 0.2s;
+}
+
+.Link {
+  text-decoration: none;
+  color: gold;
+  font-size: large;
+  font-family: math;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+
+/* *********************************Universal classes ends here********************************* */
+
+
+/* *********************************Navbar start here********************************* */
+.bg-body-tertiary {
+  background-color: #2A1A5E !important;
+
+}
+
+.navbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  margin-bottom: 120px;
+  z-index: 1000;
+  cursor: pointer;
+
+}
+
+.nav-item {
+  color: #FFD700 !important;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar .shahi {
+  font-family: cursive;
+  color: #FFFFF0;
+  font-size: larger;
+}
+
+.navbar-toggler {
+  background-color: white !important;
+}
+
+.navbar .sweet {
+  color: #C0C0C0 !important;
+}
+
+.navbar .logos li {
+  list-style: none;
+  font-size: 25px;
+  margin: 0px 12px;
+  color: silver;
+
+}
+
+.navbar .logos li:hover {
+  color: white;
+  transition: .3s;
+
+}
+
+.bag-item-count {
+  background-color: #f16565;
+  white-space: nowrap;
+  text-align: center;
+  display: inline-block;
+  padding: 0 6px;
+  height: 17px;
+
+  position: relative;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #fff;
+  left: -10px;
+  top: -12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.heart-count {
+  background-color: #f16565;
+  white-space: nowrap;
+  text-align: center;
+  padding: 0 6px;
+  position: relative;
+  font-size: 12px;
+  color: #fff;
+  left: -25px;
+  top: 2px;
+  font-weight: 700;
+  cursor: pointer;
+  height: 17px;
+  border-radius: 50%;
+}
+
+/* *********************************Navbar ends here********************************* */
+
+/********************************** Home section starts here **********************************/
+.hero-header {
+  margin-top: 90px;
+  background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(images/Home-background.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.hero-header img {
+  animation: imgRotate 50s linear infinite;
+}
+
+@keyframes imgRotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  color: rgba(255, 255, 255, .5);
+}
+
+/********************************** Home section ends here **********************************/
+
+/***********************************  About Section starts here ********************************** */
+
+/* ********************************** About Section ends  here ********************************** */
+
+/***********************************  Dish Of the Day Section starts here ********************************** */
+.dish-container video {
+  width: 100%;
+
+}
+
+
+.read-less {
+  cursor: pointer;
+  margin: 5px;
+  color: black;
+  font-weight: bold;
+  font-size: larger;
+
+}
+
+.read-more {
+  cursor: pointer;
+  margin: 5px;
+  color: black;
+  font-weight: bold;
+  font-size: larger;
+
+}
+
+/***********************************  Dish Of the Day Section ends here ********************************** */
+
+/************************************ Product Sections Starts here************************************/
+.product-container {
+  margin-top: 100px;
+}
+
+.product-box {
+  /* border: 1px solid #ddd; */
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  position: relative;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.product-box:hover {
+  background-color: rgba(147, 147, 229, 0.2);
+  transition: 0.2s;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  height: 100px;
+  width: 100px;
+}
+
+.product-image {
+  border-radius: 10px 10px 0 0;
+}
+
+.heart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+
+}
+
+.heart-icon {
+  font-size: 24px;
+  cursor: pointer;
+  /* color: white; */
+  /* Default color */
+  transition: color 0.3s ease-in-out;
+}
+
+.heart-icon.clicked {
+  color: rgba(145, 8, 8, 5);
+  /* Color when clicked */
+}
+
+
+.product-info {
+  padding: 10px;
+  /* line-height: 10%; */
+}
+
+
+
+.product-info h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  /* color: #333; */
+}
+
+.product-info p {
+  margin: 5px 0;
+  font-size: 16px;
+  /* color: red; */
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.add-to-cart-btn,
+.view-more-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.view-more-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/************************************ Product Sections ends here************************************/
+
+
+/************************************* FAQ Section starts here ************************************ */
+.accordion {
+  width: 70%;
+  margin: 12px auto;
+
+}
+
+.accordion-item {
+  margin: 20px;
+  border: 2px solid gray;
+  border-top: 2px solid gray !important;
+  background-color: rgb(105, 235, 105, 0.2);
+}
+
+/************************************* FAQ Section ends here ************************************ */
+
+/**************************************Footer starts here**************************************/
+
+.footer .btn.btn-link {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: capitalize;
+  transition: .3s;
+  text-decoration: none;
+}
+
+.footer .btn.btn-link::before {
+  position: relative;
+  list-style: none;
+}
+
+.footer .btn.btn-link:hover {
+  letter-spacing: 1px;
+  box-shadow: none;
+}
+
+.footer .btn.btn-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  border: none;
+  margin: 0px;
+
+}
+
+.footer .copyright {
+  padding: 25px 0;
+  font-size: 15px;
+  border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+  color: var(--light);
+}
+
+.footer .icons {
+  margin: 0px;
+  width: 25px;
+  height: 25px;
+}
+
+
+/**************************************Footer ends here**************************************/
+
+
+/*************************************** Individual item styles starts here ***************************************/
+.background-video {
+  position: relative;
+  top: 12px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  z-index: 0;
+  margin-top: 70px;
+
+}
+
+.content {
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  color: white;
+  width: 70%;
+  /* height: 90%; */
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-top: 60px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 900px) {
+  .content {
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .background-video {
+    height: 120vh;
+  }
+}
+
+@media screen and (width: 1024px) {
+  .content {
+    left: 0;
+    width: 100vw;
+  }
+
+  .background-video {
+    height: 90vh;
+  }
+}
+
+.gold {
+  color: gold;
+}
+
+/*************************************** Individual item styles ends here ***************************************/
+
+
+
+/* *************************************Card Container and Summary Container Styles starts here************************************* */
+.welcome-container {
+  text-align: center;
+  margin-top: 70px;
+}
+
+/* **************************Card Container and Summary Container Styles ends here*************************************** */
+
+/****************************************** Card Container Individual Items styles starts here *********************** */
+.cardIndividiualItem {
+  margin-top: 100px;
+}
+
+
+.CardItem {
+  border-radius: 12px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  width: 100%;
+  background-color: white;
+  font-family: inherit;
+}
+
+.CardItem:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: 0.2s;
+}
+
+.CardItem img {
+  height: 100px;
+  width: 100px;
+}
+
+.green {
+  background-color: green;
+
+  color: white;
+  padding: 5px 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/****************************************** Card Container Individual Items styles ends here *********************** */
+
+/* ****************************************** Summary Starts *******************************************/
+.summary-card {
+  margin: 12px 2px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  font-family: math;
+}
+
+.summary-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+/* ****************************************** Summary ends****************************************** */
+
+/* ****************************************** Sidebar Section Starts here******************************************  */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 20px;
+  overflow-y: auto
+}
+
+
+.sidebar li {
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  line-height: 12px;
+  display: block;
+  font-family: system-ui;
+}
+
+.empty_card {
+  width: 100% !important;
+  height: 100% !important;
+
+}
+
+
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.sidebar h2 {
+  margin-top: 20px;
+}
+
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+
+
+.sidebar img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.sidebar div {
+  flex: 1;
+}
+
+/* ****************************************** Sidebar Section Starts ends here******************************************  */
+
+.modal-body {
+  text-align: center;
+}
