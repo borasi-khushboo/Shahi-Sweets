@@ -59,6 +59,8 @@ To use the Shahi Sweet app:
 
     3.6) Finally place your order by clicking the 'Place Order' button.
 
+## Live Link
+[Click here ](https://shahi-sweets-dtibglxdu-khushboo-borasis-projects.vercel.app)
 
 ## Demo Video
 
