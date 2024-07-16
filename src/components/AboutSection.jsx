@@ -1,7 +1,7 @@
 const AboutSection = () => {
   return (
     <>
-      <div className="container-xxl py-5" style={{ 'marginTop': '4%' }}>
+      <div className="container-xxl py-5 about-section" style={{ 'marginTop': '4%' }}>
         <div className="container">
           <div className="row g-5 align-items-center">
             <div className="col-lg-6">
@@ -55,7 +55,7 @@ const AboutSection = () => {
                   </div>
                 </div>
               </div>
-              <a className="btn btn-primary py-3 px-5 mt-2" href="">Read More..</a>
+              <Link to={'/about'} className="btn"> Read More...</Link>
             </div>
           </div>
         </div>
